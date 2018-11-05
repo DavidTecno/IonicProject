@@ -1,0 +1,42 @@
+package com.example.computer.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.computer.entity.models.Laptop;
+import com.example.computer.entity.services.LaptopService;
+
+@Crossorigins(origins = {*})
+@RestController
+public class LaptopController {
+
+	@Autowired
+	LaptopService storeService;
+	
+	@GetMapping("/laptops")
+	public List<Laptop> getAllStore(){
+		return storeService.getAll();
+	}
+	
+	@GetMapping("/laptop/{idLaptop}")
+	public Laptop getOne(@PathVariable(value = "idLaptop") long idLaptop){
+		return storeService.get(idLaptop);
+	}
+	
+	@PostMapping("/laptop")
+	public void add(Laptop store) {
+		storeService.post(store);
+	}
+	
+	@PutMapping("/laptop/{idLaptop}")
+	public void update(Laptop store, @PathVariable(value = "idLaptop") long idLaptop) {
+		storeService.put(store, idLaptop);
+	}
+	
+}

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Computer Store</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Computer Store App!</h2>
+  <p>
+    This store take some models of laptops and desktops and make a list with them.
+  </p>
+  <p>
+    If you want add computers, YOU CAN! but you can´t remove unless you be admin(the function of admin is not implement).
+  </p>
+  <p>
+    To continue with the app, click in the button.
+  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4></ion-col>
+      <ion-col col-4><button ion-button (click)="goToApp()">Go to App</button></ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

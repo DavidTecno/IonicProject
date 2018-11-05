@@ -1,0 +1,40 @@
+package com.example.computer.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.computer.entity.models.Desktop;
+import com.example.computer.entity.services.DesktopService;
+
+@RestController
+public class DesktopController {
+
+	@Autowired
+	DesktopService storeService;
+	
+	@GetMapping("/desktops")
+	public List<Desktop> getAllStore(){
+		return storeService.getAll();
+	}
+	
+	@GetMapping("/desktop/{idDesktop}")
+	public Desktop getOne(@PathVariable(value = "idDesktop") long id){
+		return storeService.get(id);
+	}
+	
+	@PostMapping("/desktop")
+	public void add(Desktop store) {
+		storeService.post(store);
+	}
+	
+	@PutMapping("/desktop")
+	public void update(Desktop store, long id) {
+		storeService.put(store, id);
+	}
+}

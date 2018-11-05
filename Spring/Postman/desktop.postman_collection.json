@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "a265dee4-7fa0-4ac3-a9f8-e4fb987c3b58",
+		"name": "desktop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getDesktop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/desktops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"desktops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postDesktop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "model",
+							"value": "asdasd",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "sda",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "asds",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/desktop",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"desktop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putDesktop",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "sdsaasdasd",
+							"type": "text"
+						},
+						{
+							"key": "model",
+							"value": "as",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "as",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/desktop/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"desktop",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteDesktop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/desktop/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"desktop",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

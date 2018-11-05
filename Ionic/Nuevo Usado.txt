@@ -1,0 +1,2 @@
+El elemento nuevo que he usado se llama ion-slide, es un componente que desliza entre otros de su mismo tipo, este recoge un id 
+según el slide activo y recoge un dato de la base con este, recogiendo así los valores con un get.

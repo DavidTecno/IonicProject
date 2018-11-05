@@ -1,0 +1,108 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Laptop
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <h1>Laptop Viewer</h1>
+    </ion-list-header>
+    <ion-item>
+      <ion-slides #slides (ionSlideDidChange)="chargeLaptop()">
+        <ion-slide>
+          <p>Model: {{oneLaptop.model}}</p>
+          <p>Name: {{oneLaptop.name}}</p>
+          <p>Price: {{oneLaptop.price}}</p>
+          <p>Core: {{oneLaptop.core}}</p>
+          <p>Procesador: {{oneLaptop.procesador}}</p>
+          <p>Speed: {{oneLaptop.speed}}</p>
+          <p>Ram: {{oneLaptop.ram}}</p>
+          <p>Graphic Card: {{oneLaptop.graphicCardMode}}</p>
+          <p>Screen: {{oneLaptop.screenFormat}}</p>
+          <p>Battery Cells: {{oneLaptop.batteryCells}}</p>
+          <img src="../../assets/imgs/hp.png" alt="Asus">
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneLaptop.model}}</p>
+          <p>Name: {{oneLaptop.name}}</p>
+          <p>Price: {{oneLaptop.price}}</p>
+          <p>Core: {{oneLaptop.core}}</p>
+          <p>Procesador: {{oneLaptop.procesador}}</p>
+          <p>Speed: {{oneLaptop.speed}}</p>
+          <p>Ram: {{oneLaptop.ram}}</p>
+          <p>Graphic Card: {{oneLaptop.graphicCardMode}}</p>
+          <p>Screen: {{oneLaptop.screenFormat}}</p>
+          <p>Battery Cells: {{oneLaptop.batteryCells}}</p>
+          <img src="../../assets/imgs/Asus ZenBook Pro.png" alt="">
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneLaptop.model}}</p>
+          <p>Name: {{oneLaptop.name}}</p>
+          <p>Price: {{oneLaptop.price}}</p>
+          <p>Core: {{oneLaptop.core}}</p>
+          <p>Procesador: {{oneLaptop.procesador}}</p>
+          <p>Speed: {{oneLaptop.speed}}</p>
+          <p>Ram: {{oneLaptop.ram}}</p>
+          <p>Graphic Card: {{oneLaptop.graphicCardMode}}</p>
+          <p>Screen: {{oneLaptop.screenFormat}}</p>
+          <p>Battery Cells: {{oneLaptop.batteryCells}}</p>
+          <img src="../../assets/imgs/lenovo.png" alt="">
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneLaptop.model}}</p>
+          <p>Name: {{oneLaptop.name}}</p>
+          <p>Price: {{oneLaptop.price}}</p>
+          <p>Core: {{oneLaptop.core}}</p>
+          <p>Procesador: {{oneLaptop.procesador}}</p>
+          <p>Speed: {{oneLaptop.speed}}</p>
+          <p>Ram: {{oneLaptop.ram}}</p>
+          <p>Graphic Card: {{oneLaptop.graphicCardMode}}</p>
+          <p>Screen: {{oneLaptop.screenFormat}}</p>
+          <p>Battery Cells: {{oneLaptop.batteryCells}}</p>
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneLaptop.model}}</p>
+          <p>Name: {{oneLaptop.name}}</p>
+          <p>Price: {{oneLaptop.price}}</p>
+          <p>Core: {{oneLaptop.core}}</p>
+          <p>Procesador: {{oneLaptop.procesador}}</p>
+          <p>Speed: {{oneLaptop.speed}}</p>
+          <p>Ram: {{oneLaptop.ram}}</p>
+          <p>Graphic Card: {{oneLaptop.graphicCardMode}}</p>
+          <p>Screen: {{oneLaptop.screenFormat}}</p>
+          <p>Battery Cells: {{oneLaptop.batteryCells}}</p>
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneLaptop.model}}</p>
+          <p>Name: {{oneLaptop.name}}</p>
+          <p>Price: {{oneLaptop.price}}</p>
+          <p>Core: {{oneLaptop.core}}</p>
+          <p>Procesador: {{oneLaptop.procesador}}</p>
+          <p>Speed: {{oneLaptop.speed}}</p>
+          <p>Ram: {{oneLaptop.ram}}</p>
+          <p>Graphic Card: {{oneLaptop.graphicCardMode}}</p>
+          <p>Screen: {{oneLaptop.screenFormat}}</p>
+          <p>Battery Cells: {{oneLaptop.batteryCells}}</p>
+        </ion-slide>
+      </ion-slides>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4> <button ion-button (click)="presentAddModalLap()">Add</button></ion-col>
+          
+          <ion-col col-4><button ion-button (click)="editModalLap()">Edit</button></ion-col>
+
+          <ion-col col-4><button ion-button (click)="removeModelLap()">Remove</button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

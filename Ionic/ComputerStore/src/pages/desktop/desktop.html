@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button icon-only menuToggle right>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Desktop
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <h1>Desktop Viewer</h1>
+    </ion-list-header>
+    <ion-item>
+      <ion-slides #slides (ionSlideDidChange)="chargeDesktop()">
+        <ion-slide>
+          <p>Model: {{oneDesktop.model}}</p>
+          <p>Name: {{oneDesktop.name}}</p>
+          <p>Price: {{oneDesktop.price}}</p>
+          <p>Core: {{oneDesktop.core}}</p>
+          <p>Procesador: {{oneDesktop.procesador}}</p>
+          <p>Speed: {{oneDesktop.speed}}</p>
+          <p>Ram: {{oneDesktop.ram}}</p>
+          <p>Lector: {{oneDesktop.lector}}</p>
+          <p>Graphic Card: {{oneDesktop.graphicCardMode}}</p>
+          <img src="../../assets/imgs/PC Len.png" alt="Asus">
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneDesktop.model}}</p>
+          <p>Name: {{oneDesktop.name}}</p>
+          <p>Price: {{oneDesktop.price}}</p>
+          <p>Core: {{oneDesktop.core}}</p>
+          <p>Procesador: {{oneDesktop.procesador}}</p>
+          <p>Speed: {{oneDesktop.speed}}</p>
+          <p>Ram: {{oneDesktop.ram}}</p>
+          <p>Lector: {{oneDesktop.lector}}</p>
+          <p>Graphic Card: {{oneDesktop.graphicCardMode}}</p>
+          <img src="../../assets/imgs/PC Hp.png" alt="">
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneDesktop.model}}</p>
+          <p>Name: {{oneDesktop.name}}</p>
+          <p>Price: {{oneDesktop.price}}</p>
+          <p>Core: {{oneDesktop.core}}</p>
+          <p>Procesador: {{oneDesktop.procesador}}</p>
+          <p>Speed: {{oneDesktop.speed}}</p>
+          <p>Ram: {{oneDesktop.ram}}</p>
+          <p>Lector: {{oneDesktop.lector}}</p>
+          <p>Graphic Card: {{oneDesktop.graphicCardMode}}</p>
+          <img src="../../assets/imgs/PC Msi.png" alt="">
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneDesktop.model}}</p>
+          <p>Name: {{oneDesktop.name}}</p>
+          <p>Price: {{oneDesktop.price}}</p>
+          <p>Core: {{oneDesktop.core}}</p>
+          <p>Procesador: {{oneDesktop.procesador}}</p>
+          <p>Speed: {{oneDesktop.speed}}</p>
+          <p>Ram: {{oneDesktop.ram}}</p>
+          <p>Lector: {{oneDesktop.lector}}</p>
+          <p>Graphic Card: {{oneDesktop.graphicCardMode}}</p>
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneDesktop.model}}</p>
+          <p>Name: {{oneDesktop.name}}</p>
+          <p>Price: {{oneDesktop.price}}</p>
+          <p>Core: {{oneDesktop.core}}</p>
+          <p>Procesador: {{oneDesktop.procesador}}</p>
+          <p>Speed: {{oneDesktop.speed}}</p>
+          <p>Ram: {{oneDesktop.ram}}</p>
+          <p>Lector: {{oneDesktop.lector}}</p>
+          <p>Graphic Card: {{oneDesktop.graphicCardMode}}</p>
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneDesktop.model}}</p>
+          <p>Name: {{oneDesktop.name}}</p>
+          <p>Price: {{oneDesktop.price}}</p>
+          <p>Core: {{oneDesktop.core}}</p>
+          <p>Procesador: {{oneDesktop.procesador}}</p>
+          <p>Speed: {{oneDesktop.speed}}</p>
+          <p>Ram: {{oneDesktop.ram}}</p>
+          <p>Lector: {{oneDesktop.lector}}</p>
+          <p>Graphic Card: {{oneDesktop.graphicCardMode}}</p>
+        </ion-slide>
+        <ion-slide>
+          <p>Model: {{oneDesktop.model}}</p>
+          <p>Name: {{oneDesktop.name}}</p>
+          <p>Price: {{oneDesktop.price}}</p>
+          <p>Core: {{oneDesktop.core}}</p>
+          <p>Procesador: {{oneDesktop.procesador}}</p>
+          <p>Speed: {{oneDesktop.speed}}</p>
+          <p>Ram: {{oneDesktop.ram}}</p>
+          <p>Lector: {{oneDesktop.lector}}</p>
+          <p>Graphic Card: {{oneDesktop.graphicCardMode}}</p>
+        </ion-slide>
+      </ion-slides>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4> <button ion-button (click)="presentAddModalDesk()">Add</button></ion-col>
+
+          <ion-col col-4><button ion-button (click)="editModalDesk()">Edit</button></ion-col>
+
+          <ion-col col-4><button ion-button (click)="removeModelDesk()">Remove</button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

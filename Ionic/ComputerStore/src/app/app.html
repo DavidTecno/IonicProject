@@ -1,0 +1,22 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item>
+        Language
+      </button>
+      <button ion-item (click)="goToConfig()">
+        Options
+      </button>
+      <button ion-item (click)="closeApp()">
+        Close App
+      </button> 
+    </ion-list>
+  </ion-content>
+</ion-menu> 
+
+<ion-nav [root]="rootPage" #content></ion-nav>

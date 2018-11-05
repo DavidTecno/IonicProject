@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "95bd4798-c1bb-4098-a9d6-92b54a3192f2",
+		"name": "laptop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LaptopGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8080/laptops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"laptops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postLaptop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8090/laptop",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"laptop"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putLaptop",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"model\":\"Hpeote\",\"name\":\"HP 15-DB0007NS\",\"price\":\"399€\",\"core\":2,\"procesador\":\"AMD A6-9225 Dual-core\",\"speed\":\"2.6GHz - 3GHz\",\"ram\":\"8GB\",\"graphicCardMode\":\"AMD Radeon R4\",\"screenFormat\":15.6,\"batteryCells\":3}"
+				},
+				"url": {
+					"raw": "localhost:8090/laptop/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"laptop",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteLaptop",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "localhost:8090/laptop/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"laptop",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
